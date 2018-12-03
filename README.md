@@ -1,9 +1,9 @@
-#Neighbourhood Map Project
+# Neighbourhood Map Project
 
 This project is made in Udacity FEND Program. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It makes use of 'react-google-maps' for Google-maps functionality.
 
 
-##Instructions:
+## Instructions:
 
 ### `npm start`
 
@@ -23,7 +23,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-###Dependencies
+### Dependencies
 
 The project makes use of FourSquare API to fetch the locations related to passed query. Also, due to usage limit, you might see map grey with a watermark of development mode. 
 You can use your own keys for running it on your machine.
