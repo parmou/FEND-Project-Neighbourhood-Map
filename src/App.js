@@ -17,6 +17,10 @@ class App extends Component {
             }
         };
     }
+
+     /**
+     * Close the InfoWindow on all the markers
+     */
     onMarkerClickCloseAll = () => {
         const markers = this.state.markers.map(marker => {
             marker.isOpen = false;
@@ -26,12 +30,21 @@ class App extends Component {
         this.setState({ markers: [...this.state.markers, markers] })
     };
 
+     /**
+     * Retrive the location data from the foursquare api for the marker and display it in the infowindow
+     * @param {object} location marker
+     */
     onMarkerClickOpen = (marker) => {
         this.onMarkerClickCloseAll();
         marker.isOpen = true;
         this.setState({ markers: [...this.state.markers, marker] })
     }
 
+    
+    /**
+     * Retrive the location data from the foursquare api for the place which is clicked on in the list and display it in the infowindow
+     * @param {object} venue
+     */
     onListItemClick = (venue) => {
         const marker = this.state.markers.find(marker => marker.id === venue.id);
         this.onMarkerClickOpen(marker)

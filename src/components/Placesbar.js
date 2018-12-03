@@ -10,6 +10,9 @@ class Placesbar extends Component {
         };
     }
 
+    /**
+     *Filter the places shown in the sidelist as per search query
+     */
 
     filterPlaces = () => {
         if (this.state.query.trim() !== "") {
@@ -20,7 +23,10 @@ class Placesbar extends Component {
         }
         return this.props.venues;
     };
-
+    /**
+     * Handle the display of markers as per the search query
+     *@param {object} event 
+     */
     filterPlacesMarker = event => {
         this.setState({ query: event.target.value });
         const markers = this.props.venues.map(venue => {
