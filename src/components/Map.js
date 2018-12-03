@@ -68,6 +68,7 @@ class Map extends Component {
            <ErrorBoundary>
             <MyMapComponent 
            {...this.props}
+           
              googleMapURL = "https://maps.googleapis.com/maps/api/js?v=3.exp&key=XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
             loadingElement = { <div style={{ height: `100%`, width:`100%` }} />
         }
