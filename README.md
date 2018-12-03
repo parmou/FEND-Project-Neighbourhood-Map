@@ -1,8 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Neighbourhood Map Project
 
-## Available Scripts
+This project is made in Udacity FEND Program. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It makes use of 'react-google-maps' for Google-maps functionality.
 
-In the project directory, you can run:
+
+##Instructions:
 
 ### `npm start`
 
@@ -11,11 +12,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -26,6 +22,14 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+###Dependencies
+
+The project makes use of FourSquare API to fetch the locations related to passed query. Also, due to usage limit, you might see map grey with a watermark of development mode. 
+You can use your own keys for running it on your machine.
+For Foursqaure APi, use the Client_ID and Client_Secret in the FoursquareAPI in API folder which is in "src" folder.
+
+For Google Maps key, you can find it in Map.js in the components folder in "src"
 
 ### `npm run eject`
 

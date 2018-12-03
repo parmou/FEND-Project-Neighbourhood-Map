@@ -1,32 +1,72 @@
-.App {
+/* App CSS file */
+
+main {
+  display: block;
+}
+
+/* Explicitly set map height to define div element containing the map */
+#map {
+  object-fit: cover;
+  height: 100vh;
+}
+
+#list {
+  background-color: #d6a46c;
+}
+
+#title {
+  margin: 20px auto;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+#search {
+  height: 2rem;
+  font-size: 1rem;
+  margin: 20px auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Optional: Makes the page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+h1, h6 {
+  font-family: 'Cinzel', serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h2, .card-subtitle {
+  font-family: 'Bellefair', serif;  
+}
+
+button {
+  margin: 0 5px;
+}
+
+.listItem:last-child hr {
+  display: none;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.icon {
+  color: rgb(75, 47, 75);
+}
+
+@media (max-width: 575px) {
+  #map {
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 1.1rem;
+  }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
