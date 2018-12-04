@@ -3,6 +3,7 @@ import './App.css';
 import FoursqaureAPI from './API/FoursqaureAPI'
 import Map from './components/Map';
 import Placesbar from './components/Placesbar';
+import ErrorBoundary from './components/ErrorBoundary'
 
 class App extends Component {
     constructor() {
@@ -81,9 +82,11 @@ class App extends Component {
            </header>
                <section>
                  <div className="row">
+                 <ErrorBoundary>
                    <Placesbar {...this.state } onListItemClick = { this.onListItemClick }/>
                    <Map  {...this.state}
                      onMarkerClickOpen ={ this.onMarkerClickOpen}/>
+                    </ErrorBoundary>
                  </div>
                </section>
              </main>
